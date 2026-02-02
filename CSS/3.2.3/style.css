@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+    margin: 16px;
+    padding: 16x;
+}
+
+
+.example {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    color: aliceblue;
+    display: grid;
+    place-items: center;
+
+}
+
+
+.parent {
+    background: lightgreen;
+    height: 200px;
+    width: 50%;
+}
+
+.child {
+    width: 50%;
+    background-color: lightcoral;
+    height: 50%;
+}
+
+.example2{
+    width: 200px;
+    height: 200px;
+    background: lightpink;
+    display: grid;
+    place-items: center;
+    
+    
+}
+
+.example3 {
+    width: 50%;
+    height: 50%;
+    background: lightgreen;
+    
+}

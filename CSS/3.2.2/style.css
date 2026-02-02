@@ -1,0 +1,31 @@
+body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: aquamarine;
+    font-size: 15px;
+}
+
+h1, h2{
+    color: blueviolet;
+    text-align: center;
+}
+div{
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.info {
+    color: brown;
+    background-color: black;
+    display: inline;
+}
+.WARNING {
+    color: red;
+    background-color: lightblue;
+    display: inline;
+}
+
