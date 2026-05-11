@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: 
+    linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.88)),
+    url("https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  background: #0f0f0f;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #6c5ce7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid white;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 5px 0;
+  padding: 10px;
+}
+.section, header, .hero {
+  position: relative;
+  z-index: 2;
+}
+/* ANIMOVANÉ NOTY */
+.notes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.notes span {
+  position: absolute;
+  top: -50px;
+  color: white;
+  font-size: 24px;
+  opacity: 0.15;
+  animation: fall linear infinite;
+}
+
+/* různé pozice a rychlosti */
+.notes span:nth-child(1) { left: 10%; animation-duration: 8s; font-size: 30px; }
+.notes span:nth-child(2) { left: 25%; animation-duration: 6s; }
+.notes span:nth-child(3) { left: 40%; animation-duration: 10s; font-size: 35px; }
+.notes span:nth-child(4) { left: 60%; animation-duration: 7s; }
+.notes span:nth-child(5) { left: 75%; animation-duration: 9s; }
+.notes span:nth-child(6) { left: 90%; animation-duration: 5s; font-size: 28px; }
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
